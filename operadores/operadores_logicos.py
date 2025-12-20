@@ -1,26 +1,24 @@
-#AND
+# APUNTES: Operadores Logicos (AND, OR, NOT)
 
-#Para que el comparador AND nos devuelva True, todas las condiciones deben de ser ciertas
+# AND: Devuelve True solo si TODAS las condiciones son verdaderas
+# ejemplo de operador and
+resultado1 = True and True   # Devuelve True
+resultado2 = False and True  # Devuelve False
+resultado3 = True and False  # Devuelve False
+resultado4 = False and False # Devuelve False
 
-Resultado = True & True
-Resultado1 = False & True
-Resultado2 = True & False
-Resultado3 = False & False
+
+# OR: Devuelve True si AL MENOS UNA condicion es verdadera
+# ejemplo de operador or
+resultado5 = True or True   # Devuelve True
+resultado6 = False or True  # Devuelve True
+resultado7 = True or False  # Devuelve True
+resultado8 = False or False # Devuelve False
 
 
-#OR
+# NOT: Invierte el valor booleano (True se vuelve False y viceversa)
+# ejemplo de operador not
+resultado9 = not True   # Devuelve False
+resultado10 = not False # Devuelve True
 
-#Nos va a devolver true si minimo una condición se cumple
-Resultado4 = True | True
-Resultado5 = False | True
-Resultado6 = True | False
-Resultado7 = False | False
-
-#NOT
-
-#nos invierte el valor, not true = false, not false = true
-Resultado8 = not True
-Resultado9 = not False
-
-print(Resultado1)
-
+print(resultado2)

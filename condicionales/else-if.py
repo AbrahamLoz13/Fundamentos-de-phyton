@@ -1,20 +1,28 @@
+# APUNTES: Condicionales anidados (if dentro de if) y elif
 
-#el elif sirve como otra opción en caso de que la primera no se cumpla
+# Ejemplo de entrada de datos con decimales
+ingreso_mensual = float(input("Ingresa tu sueldo mensual: "))
+gasto_mensual = float(input("Ingresa tu gasto mensual: "))
 
-#se puede poner un if dentro de un if
-ingreso_mensual = 11000
-gasto_mensual = 600
+print("--- RESULTADO DEL ANALISIS ---")
+
+# Ejemplo de condicional principal
 if ingreso_mensual >= 10000:
-    if gasto_mensual <= 7000:
-        print("estás gastando bien")
-    else:
-        print("estás gastando mucho")
+    print("Tienes un buen ingreso en cualquier pais")
     
+    # Ejemplo de if anidado: Solo se lee si el ingreso es mayor a 10000
+    if gasto_mensual <= 7000:
+        print("Estas gastando correctamente")
+    else:
+        print("Estas gastando demasiado")
+
+# elif: Se ejecuta solo si el primer if fue falso
 elif ingreso_mensual >= 1000:
-    print("estás bien en cualquier parte de LATAM")
+    print("Estas bien en latinoamerica")
 
 elif ingreso_mensual >= 500:
-    print("estás bien ecnómicamente en argentina")
-    
+    print("Estas bien economicamente en Argentina")
+
+# else: Se ejecuta si ninguna condicion anterior se cumplio
 else:
-    print("eres pobre")
+    print("Tienes ingresos bajos")

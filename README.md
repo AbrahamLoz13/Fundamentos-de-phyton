@@ -1,4 +1,4 @@
-# Curso de Python - Soy Dalto
+# Curso de Python 
 
 Este repositorio almacena apuntes sobre los fundamentos de phyton.
 

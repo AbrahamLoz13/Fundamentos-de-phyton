@@ -1,36 +1,44 @@
+# APUNTES: Listas, Tuplas, Conjuntos y Diccionarios
 
-#LISTA
-
-#ejemplo simple de una lista
-
-lista = ["Abraham","21151097",9,True]
+# LISTAS
+# Van entre corchetes [] y su contenido se puede modificar
+# ejemplo de lista simple con diferentes tipos de datos
+lista = ["Leonardo", "12346", 9, True]
 print(lista)
-#para seleccionar solo un item de la lista se cuenta del 0 al 9
 
-lista2 = ["Jafet","H",9,False]
-lista2[0] = "Pepe"
-print(lista2[0])#imprimirá PEPE ya que se puede modificar
-print(lista2[1])#imprimirá H    
-print(lista2[2])#imprimirá 9
-print(lista2[3])#imprimirá False
+# ejemplo de modificacion y acceso por indices (empiezan en 0)
+lista_datos = ["Maria", "Mujer", 10, False]
 
-#TUPLAS
+# Modificamos el primer elemento (posicion 0)
+lista_datos[0] = "Ana"
 
-#es como lista pero envés de [] se usa ()
-#a diferencia de la lista, la dupla no se puede modificar
+print(lista_datos[0]) # Imprimira Ana
+print(lista_datos[1]) # Imprimira Mujer
+print(lista_datos[2]) # Imprimira 10
+print(lista_datos[3]) # Imprimira False
 
-tupla = ("Pepito",22,"H", False)
+
+# TUPLAS
+# Van entre parentesis () y NO se pueden modificar (son inmutables)
+tupla = ("Carlos", 25, "H", True)
 print(tupla)
-#Conjunto
+# Nota: Si intentamos hacer tupla[0] = "Otro", dara error
 
-conjunto = {"pepe",22,3}
 
-#Diccionario, se separa por comas
+# CONJUNTOS (SETS)
+# Van entre llaves {}, no tienen un orden fijo y no permiten datos repetidos
+# ejemplo de conjunto
+conjunto = {"Pedro", 22, 3}
+print(conjunto)
 
+
+# DICCIONARIOS
+# Estructura de clave : valor, separados por comas
 diccionario = {
-    "Nombre":"Abraham",
-    "Apellido":"Lozano",
-    "Edad": 22
+    "nombre": "Pedro",
+    "apellido": "Benites",
+    "edad": 22
 }
 
-print(diccionario["Edad"])#Me va a mostrar la edad de mi diccionario osea 22
+# Para acceder al valor se usa la clave (key) entre corchetes
+print(diccionario["edad"]) # Imprimira 22

@@ -1,64 +1,65 @@
-#Dir: devuelve la lista de atributos validos del objeto pasado
-#es para ver todos los métodos de algo
+# APUNTES: Metodos de cadenas (Strings)
 
-cadena1 = "hola soy Abraham"
+cadena1 = "hola soy Pepe"
 cadena2 = "12345"
 
+# dir: Devuelve la lista de atributos y metodos validos del objeto
+# Es util para ver que se puede hacer con un tipo de dato
 resultado = dir(cadena1)
 
-#PARA LOS MÉTODOS SE DEBE DE USAR ()
+# NOTA: Para ejecutar los metodos se deben usar parentesis ()
 
-
-#UPER: convierte todo a mayúsculas
+# upper: Convierte todo el texto a mayusculas
 mayus = cadena1.upper()
 print(mayus)
-#LOWER: convierte todo a minúsculas
+
+# lower: Convierte todo el texto a minusculas
 minus = cadena1.lower()
-print(mayus)
-#CAPITALIZE: convierte la primera en mayúscula
+print(minus)
+
+# capitalize: Convierte solo la primera letra a mayuscula
 primera_mayus = cadena1.capitalize()
 print(primera_mayus)
 
-#FIND: Buscar un texto dentro de una cadena
+# find: Busca una cadena dentro de otra
+# Devuelve la posicion (indice) donde empieza
+# Si NO encuentra el valor, devuelve -1
+busqueda_find = cadena1.find("hola")
+print(busqueda_find)
 
-busqueda_find = cadena1.find("hola") #en esta línea va a buscar el texto hola en la cadena uno
+# index: Igual que find, pero si NO encuentra el valor lanza un error (excepcion)
+busqueda_ind = cadena1.index("hola")
+print(busqueda_ind)
 
-print(busqueda_find)#lo que me da es la posición de el texto o letra buscada en la cadena
-#cuando no encuentra un valor nos devuelve -1
-
-
-#INDEX: a diferencia de esta no nos da -1, nos da un error (exception), lo demás es igual
-busqueda_ind = cadena1.index("hola") #en esta línea va a buscar el texto hola en la cadena uno
-
-print(busqueda_ind)#lo que me da es la posición de el texto o letra buscada en la cadena
-#cuando no encuentra un valor nos devuelve -1
-
-#IS NUMERIC: si es numérico devolvemos true, si no es false
+# isnumeric: Devuelve True si la cadena contiene solo numeros
 es_numerico = cadena2.isnumeric()
 print(es_numerico)
 
-#ES ALPHANUMERICO: si son letras de la "a" a la "z" devuelve true, sin caracteres especiales ni espacios
+# isalpha: Devuelve True si son solo letras (a-z)
+# Los espacios y caracteres especiales hacen que de False
 es_texto = cadena1.isalpha()
 print(es_texto)
 
-#COUNT: cuenta las letras o palabras dentro de una cadena
-contar_cadena = cadena1.count("a")#va a contar las "a"
+# count: Cuenta cuantas veces aparece una letra o palabra en la cadena
+contar_cadena = cadena1.count("a")
 print(contar_cadena)
 
-#LEN: cuenta la cantidad de carácteres de una cadena dentro de otra cadena
+# len: Cuenta la cantidad total de caracteres (incluyendo espacios)
+# NOTA: len es una funcion, no un metodo
+contar_caracteres = len(cadena1)
+print(contar_caracteres)
 
-contar_coincidencias = len(cadena1) #ESTE NO ES UN MÉTODO ES UNA FUNCIÓN
-print(contar_coincidencias)#me devuelve la cantidad de carácteres de el texto
+# startswith: Verifica si la cadena empieza con el texto indicado
+# Devuelve True o False
+inicia_con = cadena1.startswith("h")
+print(inicia_con)
 
-#STARTSWITHverifica si una cadena empieza con lo indicado por nosotros
-inicia_con = cadena1.startswith("a")
-print(inicia_con)#si inicia con a devuelve true si no, false, respetando
+# endswith: Verifica si la cadena termina con el texto indicado
+# Devuelve True o False
+termina_con = cadena1.endswith("m")
+print(termina_con)
 
-
-#ENDWITHverifica si una cadena termina con lo indicado por nosotros
-termina_con = cadena1.endswith("a")
-print(termina_con)#si termina con a devuelve true si no, false, respetando
-
-#REPLACE: remplaza un texto por otro, en el primer parámetro ponemos lo que queremos remplazar por el segundo
-cadena_nueva = cadena1.replace("la","lu")
-print(cadena_nueva)#nos daría holu soy abraham
+# replace: Reemplaza un fragmento de texto por otro
+# Primer parametro: valor antiguo, Segundo parametro: valor nuevo
+cadena_nueva = cadena1.replace("la", "lu")
+print(cadena_nueva) # ejemplo de resultado: holu soy abraham

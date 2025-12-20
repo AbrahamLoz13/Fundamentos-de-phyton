@@ -1,40 +1,37 @@
+# APUNTES: Variables, Concatenacion y Operadores de Pertenencia
 
-#en lenguajes como phyton no es necesario estsblecer el tipo de variable
-#ya que este es un lenguaje dinámico por ejemplo
-
-nombre = "Abraham"
+# Tipado Dinamico: No es necesario declarar el tipo de variable
+nombre = "Lucia"
 print(nombre)
-#en cuestión de los números, si pones que numero = 10 y luego pones número += 1, se le va a sumas 1 al 10
-numero = 10
-numero += 1
+
+# ejemplo de operadores de asignacion
+# Suma el valor a la variable existente
+numero = 50
+numero += 1 
 print(numero)
 
-#concatenar: unir cadenas de texto, en este ejemplo imprimirá: Hola Jafet ¿Cómo estás?
+# CONCATENACION (Unir textos)
 
-#CONCATENAR CON +
+# ejemplo de concatenacion con signo +
+# Solo sirve para unir texto con texto
+print("Hola " + nombre + ", bienvenida")
 
-print("Hola " +nombre+ " ¿Cómo estás?")
+# ejemplo de concatenacion con f-strings (Recomendada)
+# Permite incrustar variables directamente dentro de las llaves {}
+saludo = f"Hola {nombre}, saludos"
+print(saludo)
 
-#CONCATENAR CON F
-
-bienvenida = f'Hola {nombre} ¿Cómo estás?'
-print(bienvenida)
-
-#CONCATERNAR CON F NUMEROS O BOOLEANS A TEXTO
-
-#una de la ventaja que tiene esta forma de concatenar es que puede convertir números a texto'''
-
-boolean = False
-cadena = f"es {boolean}"
-print(cadena)
-
-#OPERADORES DE PERTENENCIA IN/ NOT IN
-
-#podemos buscar el texto que tiene una variable con el siguiente ejemplo, si lo que buscamos si se encuentra
-#retornará un true, de lo contrario será false, esto es sensible con mayúsculas y minúsculas'''
-
-apellido = "Abraham"
-print("Abraham" in apellido)#true
-print("Abraham" not in apellido)#false
+# f-strings convierte automaticamente numeros o booleanos a texto
+es_valido = True
+mensaje = f"El estado es: {es_valido}"
+print(mensaje)
 
 
+# OPERADORES DE PERTENENCIA (in / not in)
+
+# Verifican si un valor existe dentro de una variable
+# Es sensible a mayusculas y minusculas
+titulo = "Curso de Python"
+
+print("Python" in titulo)     # True
+print("Java" not in titulo)   # True
