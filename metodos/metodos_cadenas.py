@@ -62,4 +62,8 @@ print(termina_con)
 # replace: Reemplaza un fragmento de texto por otro
 # Primer parametro: valor antiguo, Segundo parametro: valor nuevo
 cadena_nueva = cadena1.replace("la", "lu")
-print(cadena_nueva) # ejemplo de resultado: holu soy abraham
+print(cadena_nueva) # ejemplo de resultado: holu soy pepe
+
+# split : separar cadenas con la cadena que le pasemos
+cadena_separada = cadena1.split(" ")#nos va a separar por cada espacio y nos devuelve una matriz (lista)
+print(cadena_separada)# ['hola','soy','pepe']

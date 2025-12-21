@@ -1,18 +1,27 @@
-# Misión: Corregir este código
+# Definición de una tupla (Nombre, Edad, Contraseña)
+# #ejemplo de estructura inmutable
+usuario = ("Abraham", 22, "12345") 
 
-usuario = ("Abraham", 22, "12345") # Esto es una Tupla con (Nombre, Edad, Contraseña)
-
-# Error 1: Intentamos cambiar el nombre en una Tupla (no se puede en una tupla)
+# Resolución Error 1: 
+# El objetivo era modificar un dato, pero las tuplas no lo permiten.
+# Se mantiene como comentario porque causaría un TypeError.
 # usuario[0] = "Jafet" 
 
-# Error 2: Concatenación incorrecta de número con texto sin f-string o conversión (faltaba {})
+# Resolución Error 2: 
+# #ejemplo de formateo de texto
+# El objetivo es integrar un entero dentro de una cadena. 
+# Se utiliza f-string para permitir la interpolación de {usuario[1]}.
 mensaje = f"La edad del usuario es {usuario[1]}"
 
-# Error 3: Diccionario mal definido (falta algo visual) (faltaba las ,)
+# Resolución Error 3: 
+# #ejemplo de definición de diccionario
+# El objetivo es crear un mapa de clave:valor.
+# Se corrigió agregando la coma necesaria para separar los elementos del diccionario.
 datos_extra = {
     "Ciudad": "Aguascalientes",
     "Pais": "Mexico"
 }
 
+# Impresión de resultados
 print(mensaje)
 print(datos_extra["Pais"])
