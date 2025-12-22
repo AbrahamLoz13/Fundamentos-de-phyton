@@ -10,7 +10,7 @@ Aquí encontrarás una recopilación general de:
 
 
 ### Créditos
-Todo el material de estudio y la estructura de aprendizaje están basados en el contenido del canal **[Soy Dalto](https://www.youtube.com/@SoyDalto)**.
+Parte del material de estudio y la estructura de aprendizaje están basados en el contenido del canal **[Soy Dalto](https://www.youtube.com/@SoyDalto)**.
 
 ---
 *Tecnologías: Python 3 | Visual Studio Code | Git*
